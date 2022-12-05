@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hellooooooo</h1>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, fuga. Veritatis non nobis error et enim architecto voluptatibus doloribus dolores porro explicabo corporis, maxime debitis voluptatem repudiandae saepe, quam sint!</p>
+    </div>
+
+    <script>
+
+        // let arr1 = [1,2,3];
+        // let arr2 = ["a","b","c"];
+
+        // function run(x,y,z) {
+        //     return x+y+z;
+        // }
+
+        // function test(x,y) {
+        //     return x+y;
+        // }
+
+        // let result = [...arr1,"abc",...arr2]
+        // console.log(result)
+
+        let myJson = '{"name":"Myat Min Aung","age":20,"skill":["Html","Css","js"]}'
+        
+        fetch ('http://127.0.0.1:5500/Learn%20JavaScript/myTest.Json')
+        .then (responese => responese.json())
+        .then (data => console.log(data));
+
+    </script>
+    
+</body>
+</html>

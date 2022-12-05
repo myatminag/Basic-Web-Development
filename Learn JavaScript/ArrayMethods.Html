@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="./Js/Shops.js"></script>
+
+    <script>
+
+        const fruits = ["Banana","Orange","Apple","Mango","Pineapple"]
+
+        const marks = [67,78,34,89,98,87]
+
+        // map
+        let newArr = fruits.map(function(element,index){
+            console.log(index+1,element);
+            return element+" - "+element.length;
+        });
+        // let newArr = fruits.map(el => el, el => index)
+
+        // let newArr = marks.map(function(element){
+        //     return element >= 40 ? "pass" : "fail";
+        // });
+
+        // let newArr = shop.map(function(element){
+        //     return element.title+" - "+element.price
+        // });
+
+        //filter
+        // let newArr = fruits.filter(function(element){
+        //     console.log(element,element.length);
+        //     return element.length==5;
+        // });
+
+        // let newArr = marks.filter(function(element){
+        //     return element >= 75;
+        // });
+
+        // let newArr = shop.filter(function(element){
+        //     // console.log(element.price)
+        //     return element.price>150;
+        // });
+
+        //find
+        // let newArr = fruits.find(function(element){
+        //     console.log(element)
+        //     return element == 4;
+        // });
+
+        // let newArr = shop.find(function(element){
+        //     console.log(element)
+        //     return element.id == 3;
+        // });
+
+        //reduce
+        // let newArr = shop.reduce(function(p,c){
+        //    console.log(p+"-"+c.price)
+        //    return p+c.price;
+        // },0);
+
+        //some
+        // let newArr = marks.some(function(element){
+        //   console.log(element)
+
+        //   return element < 40;
+        // });
+
+        //every
+        // let newArr = marks.every(function(element){
+        //   console.log(element)
+
+        //   return element >= 40;
+        // });
+
+        //changing
+        // let newArr = fruits.filter(function(element){
+        //     return element.length > 4;
+        // }).join("-")
+
+        console.log(newArr)
+
+    </script>
+    
+</body>
+</html>

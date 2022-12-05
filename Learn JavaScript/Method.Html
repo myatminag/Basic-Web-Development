@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function myTest(){
+            console.log(this); //return window object
+        }
+
+        let myself = {
+            name : "Myat Min Aung",
+            age : 21,
+            skill : ["html","css","javascript"],
+
+            // method
+            test : function(){
+                return "this is test method";
+            },
+
+            // method es6
+            run(para){
+                return "this is run method ----"+para;
+            },
+
+            showAll(){
+                console.log(this); // return current object
+                return `My name is ${this.name} and I'm ${this.age} year old --- ${this.test()} and ${this.run()}`;
+            }
+        }
+
+        let mySelf = {
+            firstName : "Myatmin",
+            lastName : "Aung",
+            age : 21,
+            fullName : function(){
+                return `My name is ${this.firstName} ${this.lastName} and i am ${this.age} years old`;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

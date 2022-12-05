@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Lesson</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        .mb-3{
+            margin-bottom:15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="heading" style="color: blue;" >Event သင်ခန်းစာ</h1>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur <b title="Hein Htet Zan" data="bb">HHZ</b> elit. Dicta molestiae soluta libero quas veniam officiis illum distinctio labore at, ad quis harum voluptatem est porro autem voluptates? Reprehenderit, dolores tempore.
+    </p>
+
+    <!-- <button onclick="run()">Run</button> -->
+    <button  id="testBtn">Text Btn</button>
+
+    <br>
+    <br>
+    <br>
+    <a href="https://google.com" id="testLink">Click to Google</a>
+
+    <img src="../Learn HTML/assets/3846574.jpg" style="height: 200px;" alt=""  >
+    <hr>
+    <h4>Fruit List</h4>
+    <ul>
+        <li>Apple</li>
+        <li class="abc">Orange</li>
+        <li data="cc">Mango</li>
+        <li hhz="bb" asdf='asdfjkl'>Banana</li>
+    </ul>
+    <hr>
+    <h4>Student List</h4>
+    <ol>
+        <li>Mg Mg</li>
+        <li>Kyaw Kyaw</li>
+        <li class="abc">Zaw Zaw</li>
+        <li>Mya Mya</li>
+    </ol>
+
+    <hr>
+
+
+
+    <form action="" id="testForm">
+        <fieldset>
+            <legend>Test Form</legend>
+            <div class="mb-3">
+                <label class="abc">Name</label>
+                <br>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="mb-3">
+                <label>Weight</label>
+                <br>
+                <input type="number" name="weight" id="weight">
+            </div>
+            <div class="mb-3">
+                <label>Date of Birdth</label>
+                <br>
+                <input type="date" name="bd" id="bd">
+            </div>
+
+            <div>
+                <label for="volume">Donate Money</label>
+                <br>
+                <input type="range" id="money" name="money" min="0" max="1000">
+                
+            </div>
+
+            <div class="mb-3">
+                <label>Photo</label>
+                <br>
+                <input type="file" name="photo[]" id="photo" multiple>
+            </div>
+        
+            <div class="mb-3">
+                <label>Select Your Country</label>
+                <br>
+                <select name="country" id="country">
+                    <option value="mm">Myanmar</option>
+                    <option value="jp">Japan</option>
+                    <option value="kr">Korea</option>
+                    <option value="th">Thailand</option>
+                </select>
+            </div>
+            <hr>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <a href="#">Test Link</a>
+
+
+
+
+    <script>
+
+
+        //object
+        let myself = {
+
+            //properties
+            firstName: "hein",
+            lastName: "htet",
+            id: 123,
+
+            //methods
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            },
+            //es6
+            showName(){
+                return this.firstName + " " + this.lastName;
+            },
+            //method with parameter
+            eat(everytihig){
+                return "I like "+everytihig;
+            }
+
+        };
+
+        function run(){
+            console.log()
+            console.log("I");
+            console.log("am");
+            console.log("run");
+        }
+
+        // document.getElementById("testForm").addEventListener("submit",function(e){
+        //     e.preventDefault();
+        //     console.log("I'm on submit");
+        // })
+
+        // document.querySelector("#name").addEventListener("focus",function(){
+        //     console.log("I'm focus");
+        // });
+        // document.querySelector("#name").addEventListener("blur",function(){
+        //     console.log("I'm blur");
+        // });
+
+        // document.querySelector("#name").addEventListener("change",function(){
+        //     console.log("I'm change event");
+        // });
+
+        // document.querySelector("[type='file']").addEventListener("change",function(){
+        //     console.log(this.files);
+        // })
+
+        // document.querySelector("select").addEventListener("change",function(){
+        //     console.log(this.value);
+        // });
+
+        // document.getElementById("testLink").addEventListener("click",function(e){
+        //     e.preventDefault();
+
+        //     console.log(this.getAttribute("href"));
+        //     console.log(this.innerText);
+
+        //     console.log(e);
+        // })
+
+        // document.getElementById("name").addEventListener("keyup",function(){
+        //     console.log(this.value)
+        // });
+
+
+        // document.querySelector("ul").addEventListener("click",function(e){
+        //     console.log(e.target.innerText);
+        // })
+
+        // document.querySelector("#testBtn").onclick = function(){
+        //     console.log(this.innerText);
+        //     run();
+        // }
+
+        // document.addEventListener("keyup",function(e){
+        //     if(e.keyCode == 13){
+        //         run()
+        //     }
+        //     console.log(e.key,e.keyCode);
+        // });
+
+        // document.addEventListener("keypress",function(){
+        //     console.log("I'm keypress");
+        // })
+
+        // document.addEventListener("keydown",function(){
+        //     console.log("I'm keydown");
+        // })
+
+    
+        // document.querySelector("#testBtn").addEventListener("click",function(){
+        //     run();
+        // });
+
+        // window.onload = function(){
+        //     console.log("I'm window onload event");
+        // }
+
+        // console.log("hello")
+
+        // document.addEventListener("mousemove",function(e){
+        //     console.log(e.clientX,e.clientY);
+        // });
+
+        // window.addEventListener("scroll",function(){
+        //     console.log(this.scrollY);
+        //     console.log("U scroll");
+        // })
+
+
+
+
+        document.addEventListener("keyup",function(e){
+            if(e.keyCode == 13){
+                run()
+            }
+            console.log(e.key,e.keyCode);
+        });
+
+        document.querySelector("ul").addEventListener("click",function(e){
+            console.log(e.target.innerText);
+        });
+
+        document.getElementById("testLink").addEventListener("click",function(event){
+            event.preventDefault();
+            console.log(this.getAttribute("href"));
+            console.log(this.innerText);
+            console.log(event);
+        });
+
+        document.getElementById("name").addEventListener("keyup",function(){
+            console.log(this.value);
+        });
+
+        document.querySelector("#name").addEventListener("focus",function(){
+            console.log("I am focus");
+        });
+
+        document.querySelector("#name").addEventListener("blur",function(){
+            console.log("I am blur");
+        });
+
+         
+        document.querySelector("#name").addEventListener("change",function(){
+            console.log("I am change");
+        });
+    
+        document.querySelector("select").addEventListener("change",function(){
+            console.log(this.value);
+        });
+
+        document.querySelector("[type='file']").addEventListener("change",function(){
+            console.log(this.files);
+        });
+
+        document.getElementById("testForm").addEventListener("submit",function(e){
+            e.preventDefault();
+            console.log("I am Submit");
+        });
+
+        // window.onload = function(){
+        //     console.log("I am window onload");
+        // }
+        // console.log("Hello")
+
+        // window.addEventListener("scroll",function(){
+        //     console.log(this.scrollY);
+        //     console.log("I am scroll");
+        // });
+
+        // document.addEventListener("mousemove",function(e){
+        //     console.log(e.clientX,e.clientY);
+        // });
+
+    </script>
+    
+</body>
+</html>

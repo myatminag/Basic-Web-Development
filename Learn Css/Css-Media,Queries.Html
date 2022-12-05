@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: skyblue;
+        }
+
+        p{
+            border: 1px solid black;
+            padding: 20px;
+            display: inline-block;
+            width: 30%;
+        }
+
+        @media screen and (max-width:1024px) {
+            body{
+                background-color: pink;
+            }
+
+            p{
+                width: 40%;
+            }
+            
+            p:last-child{
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            body{
+            background-color: orange;
+            }
+            p{
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus magni, quia porro praesentium, omnis quisquam iusto et ratione asperiores dignissimos similique excepturi eligendi, vero officia odit! Quidem, dolorum deserunt.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus magni, quia porro praesentium, omnis quisquam iusto et ratione asperiores dignissimos similique excepturi eligendi, vero officia odit! Quidem, dolorum deserunt.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus magni, quia porro praesentium, omnis quisquam iusto et ratione asperiores dignissimos similique excepturi eligendi, vero officia odit! Quidem, dolorum deserunt.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus magni, quia porro praesentium, omnis quisquam iusto et ratione asperiores dignissimos similique excepturi eligendi, vero officia odit! Quidem, dolorum deserunt.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus magni, quia porro praesentium, omnis quisquam iusto et ratione asperiores dignissimos similique excepturi eligendi, vero officia odit! Quidem, dolorum deserunt.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur accusamus magni, quia porro praesentium, omnis quisquam iusto et ratione asperiores dignissimos similique excepturi eligendi, vero officia odit! Quidem, dolorum deserunt.
+    </p>
+    
+</body>
+</html>

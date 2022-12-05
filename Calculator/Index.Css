@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: black;
+}
+
+.calc {
+    width: 350px;
+    margin: 100px auto;
+}
+
+.display {
+    color: #ffffff;
+    font-size: 60px;
+    text-align: right;
+    padding: 10px;
+    height: 100px;
+}
+
+.key {
+    background-color: #333333;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #333333;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.key:active {
+    background-color: #33333390;
+}
+
+.zero {
+    width: 170px;
+    border-radius: 80px;
+}
+
+tr:first-child td .key {
+    background-color: #a5a5a5;
+    color: #000000;
+}
+
+tr:first-child td .key:active {
+    background-color: #a5a5a590;
+}
+
+tr td:last-child .key {
+    background-color: #ffa45c;
+    color: white;
+}
+
+tr td:last-child .key:active {
+    background-color: #ffa45c90;
+}

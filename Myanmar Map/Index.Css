@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Padauk:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat','Padauk', sans-serif;
+}
+
+body {
+    background-color: #222221;
+    color: #ffffff;
+}
+
+.box {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    width: 50%;
+}
+
+.info-title {
+    font-size: 40px;
+    color: #22eaaa;
+}
+
+.info-description {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.info-place {
+    font-size: 25px;
+}
+
+.currentPlace {
+    color: #ff6f91;
+}
+
+.map svg {
+    height: 100%;
+    position: relative;
+    stroke: white;
+    stroke-opacity: 0.5;
+}
+
+.map svg path {
+    position: absolute;
+    transition: 0.7s;
+    fill: #ff6f91;
+}
+
+.map svg path:hover {
+    fill: #ffffff !important;
+}
+
+@media screen and (max-width: 900px) {
+    .box {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .info-place {
+        font-size: 15px;
+    }
+}

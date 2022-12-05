@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS UI Calculator</title>
+    <style>
+
+        .key {
+            padding: 20px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="calc">
+
+        <h1 class="display-box"></h1>
+        <div class="keypad"></div>
+
+    </div>
+
+    <script>
+
+        let operators = ["+","-","*","/","="];
+        let keyPad = document.querySelector(".keypad");
+        let displayBox = document.querySelector(".display-box");
+
+        for (let i = 0; i < 10; i++) {
+            keyPad.innerHTML += `<button class="key" onclick="showInDisplay(${i})">${i}</button>`;
+        }
+
+        operators.forEach(x => {
+            if (x === "=") {
+                keyPad.innerHTML += `<button class="key" onclick='calc()'>${x}</button>`
+            } else {
+                keyPad.innerHTML += `<button class="key" onclick='showInDisplay("${x}")'>${x}</button>`
+            }   
+        })
+
+        let showInDisplay = (x) => displayBox.innerText += x
+
+        let calc = _ =>  displayBox.innerText = eval(displayBox.innerText);
+
+    </script>
+    
+</body>
+</html>

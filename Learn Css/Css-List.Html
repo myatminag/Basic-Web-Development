@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;  
+        }
+
+        .list-one{
+            list-style-type: square;
+        }
+
+        .list-two{
+            border: 1px solid black;
+            /* padding: 0px; */
+            list-style-type: none;
+            /* width: 200px; */
+            padding: 5px;
+            text-align: right;
+        }
+
+        .list-two li{
+            border: 1px solid black;
+            padding: 10px 15px;
+            /* text-align: center; */
+            /* margin-bottom: 5px; */
+            /* width: 200px; */
+            /* margin: 0 10px; */
+            display: inline-block;
+            transition: 0.5s;
+        }
+
+        .list-two li:last-child{
+            margin-bottom: 0px;
+        }
+
+        .list-two li:hover,.list-two li.active{
+            background-color: black;
+            color: white;
+        }
+
+        .list-three{
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .list-three li{
+            background-color: #dbdbdb;
+            color: black;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            width: 200px;
+            border-left: 2px solid black;
+            transition: 0.5s;
+            box-sizing: border-box;
+        }
+
+        .list-three li:hover,.list-three li.active{
+            border-left: 8px solid black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul class="list-one">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Pineapple</li>
+    </ul>
+    
+    <br>
+
+    <ul class="list-two">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li class="active">Apple</li>
+        <li>Banana</li>
+        <li>Pineapple</li>
+    </ul>
+
+    <br>
+
+    <ul class="list-three">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li class="active">Apple</li>
+        <li>Banana</li>
+        <li>Pineapple</li>
+    </ul>
+    
+</body>
+</html>

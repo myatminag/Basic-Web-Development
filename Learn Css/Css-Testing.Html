@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: borderbox;
+        }
+
+        .flex-container{
+            background-color: lightblue;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            align-items: center;
+            align-content: space-around;
+            height: 600px;
+
+        }
+
+        .m1{
+            margin: 10px;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        .flex-container > div{
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="flex-container m1">
+        <div>Hello World 1</div>
+        <div>Hello World 2</div>
+        <div>Hello World 3</div>
+        <div>Hello World 4</div>
+        <div>Hello World 5</div>
+        <div>Hello World 6</div>
+        <div>Hello World 1</div>
+        <div>Hello World 2</div>
+        <div>Hello World 3</div>
+    </div>
+   
+</body>
+</html>

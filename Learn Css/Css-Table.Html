@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .title{
+            color: #88bef5;
+        }
+
+        /* child selector */
+        .title span{
+            color: black;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }    
+
+        /* tr{
+            border-bottom: 2px solid black;
+        } */
+
+        td, th{
+            border: 2px solid black;
+            padding: 10px 15px;
+        }
+
+        tbody tr:hover{
+            background-color: #eee;
+        }
+
+        thead{
+            background-color: #88bef5;
+            color: white;
+        }
+
+        thead th{
+            text-align: left;
+        }
+
+        tbody tr td:first-child{
+            background-color: #88bef5;
+            color: white;
+        }
+
+        .text-right{
+            text-align: right;
+        }
+
+        .total{
+            text-align:center;
+            font-weight: bold;
+            background-color: white !important;
+            color: black !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h3 class="title">Table <span>Css</span></h3>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Country</th>
+                <th>Captial</th>
+                <th>National</th>
+                <th>Population</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>USA</td>
+                <td class="text-right">Washington DC</td>
+                <td class="text-right">American</td>
+                <td class="text-right">100 million</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Germany</td>
+                <td class="text-right">Berlin</td>
+                <td class="text-right">German</td>
+                <td class="text-right">50 million</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Russia</td>
+                <td class="text-right">Moscow</td>
+                <td class="text-right">Russian</td>
+                <td class="text-right">70 million</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Japan</td>
+                <td class="text-right">Tokyo</td>
+                <td class="text-right">Japanese</td>
+                <td class="text-right">60 million</td>
+            </tr>
+            <tr>
+                <td class="total" colspan="4">Total</td>
+                <td>280 million</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        img {
+            width: 200px;
+
+        }
+
+        .detectArea { 
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <img src="offBulb.gif" id="bulb" alt="">
+
+    <br>
+    <br>
+    <br>
+
+    
+    <div class="">
+        <button onclick="turnOn()">Light On</button>
+        <button onclick="turnOff()">Light Off</button>
+    </div>
+
+
+    <br>
+
+
+    <div class="">
+        <button onclick="toggleSwitch()">Digital Switch</button>
+    </div>
+
+
+    <br>
+
+
+    <div class="">
+        <button onclick="toggleSwitch()">Switch1</button>
+        <button onclick="toggleSwitch()">Switch2</button>
+    </div>
+
+
+    <br>
+
+
+    <div class="detectArea">Detective Area!</div>
+
+
+    <script>
+
+    let lightBulb = document.getElementById("bulb");
+
+    turnOn = () => lightBulb.setAttribute("src","onBulb.gif");
+
+    turnOff = () => lightBulb.setAttribute("src","offBulb.gif");
+
+    toggleSwitch = () => {
+        if(lightBulb.getAttribute("src") === "onBulb.gif") {
+            turnOff();
+        }else {
+            turnOn();
+        }
+    }
+
+    document.querySelector(".detectArea").addEventListener("mouseenter",function(){
+        turnOn();
+        setTimeout(turnOff,3000);
+    })
+
+    </script>
+    
+</body>
+</html>

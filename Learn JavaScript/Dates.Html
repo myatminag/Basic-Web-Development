@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // const d = new Date();
+        // console.log(d)
+
+        // const d = new Date(2021, 0, 16, 7);
+        // console.log(d)
+
+        // const d = new Date("January 16, 2022, 7:46:00");
+        // console.log(d)
+
+        // const d = new Date(0);
+        // console.log(d)
+
+        // const d = new Date("2021-01-17T07:28:45Z");
+        // console.log(d)
+        
+        // let d = new Date("17/01/2022");
+        // console.log(d)
+
+        // let d = Date.parse("January 17 2022");
+        // console.log(d)
+
+        // let d = new Date()
+        // d.getTime();
+
+        // let d = new Date()
+        // d.getFullYear();
+
+        // let d = new Date()
+        // d.getMonth();
+
+        // const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        // let d = new Date();
+        // let month = months[d.getMonth()];
+
+        // const d = new Date();
+        // d.getDate();
+
+        // const d = new Date();
+        // d.getHours();
+
+        // const d = new Date();
+        // d.getMinutes();
+
+        // const d = new Date();
+        // d.getDay();
+
+        // const d = new Date();
+        // d.setFullYear(2022, 11 ,3);
+        // console.log(d);
+
+        // const d = new Date();
+        // d.setMonth(11);
+        // console.log(d)
+
+        // const d = new Date();
+        // d.setDate(d.getDate()+150);
+        // console.log(d);
+
+        //Comparison of Dates
+        let today = new Date();
+        let someday = new Date();
+        someday.setFullYear(2200, 3, 13);
+        if(someday > today){
+            console.log("Today is before April 13, 2200");
+        }else{
+            console.log("Today is after April 13, 2200");
+        }
+
+        let d = new Date();
+        console.log(d);
+        let currentHour = d.getHours();
+        d.setHours(currentHour+1500);
+        console.log(d);
+
+        let totalLessonHours = 50;
+        let learnHourPerDay = 2;
+        let daysTofinish = totalLessonHours / learnHourPerDay;
+        d.setDate(d.getDate()+daysTofinish);
+        console.log(d);
+
+    </script>
+    
+</body>
+</html>

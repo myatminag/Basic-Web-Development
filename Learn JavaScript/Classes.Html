@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        class Myself {
+
+            constructor(x){
+                console.log("My name is Myat Min Aung and "+x);
+            }
+
+            properties
+            name = "Myat Min Aung";
+            age = 21;
+            skill = "Web Development";
+            Height = "Five feet & five inches";
+
+            method
+            learn(){
+                return "I am learning Web Development";
+            }
+            dateofBirth(){
+                return "I was born in 2001";
+            }
+        }
+
+        instance
+        let myself = new Myself("I am 21 years old");
+        console.log(myself.name);
+        console.log(myself.skill);
+
+        class Students {
+            constructor(name,age,phone){
+                this.name = name;
+                this.age = age;
+                this.phone = phone;
+            }
+            learn(){
+                return this.name+" who is "+this.age+" years old can learn";
+            }
+        }
+        let s1 = new Students("Mg Mg",19,"0999877666");
+        let s2 = new Students("Aung Aung",17,"099567886");
+        let s3 = new Students("Kyaw Kyaw",15,"0993422466");
+        let s4 = new Students("Zaw Zaw",16,"0992456788");
+
+    </script>
+    
+</body>
+</html>

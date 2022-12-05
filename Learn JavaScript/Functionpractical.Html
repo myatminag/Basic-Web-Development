@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let record = [];
+        let index = 0
+
+        // function houseArea(width,breadth){
+        //     let house = width * breadth;
+        //     let result = house + " sqft ";
+        //     record[index] = {
+        //         width ,
+        //         breadth ,
+        //         result ,
+        //     };
+        //     index++;
+        //     return result;
+        // }
+
+        function saverecord(w,b,r){
+            record[index] = {
+                width: w,
+                breadth: b,
+                result: r,
+            };
+            index++;
+        }
+
+        function houseArea(width,breadth){
+            let house = width * breadth;
+            let result = house + " sqft ";
+            saverecord(width,breadth,result)
+            return result;
+        }
+
+        let exchangeRates = {
+            USD: 1636,
+            CNY: 252.99,
+            CHF: 1.779,
+            PKR: 10.257,
+            KES: 15.120,
+            THB: 49.947,
+            EGP: 104.17,
+            BDT: 19.291,
+            SAR: 436.19,
+            LAK: 17.190,
+            KHR: 40.177,
+        }
+
+        function exchangeRatesToMMk(amount,currency){
+            let calculation = amount * exchangeRates[currency];
+            let result = calculation + " MMK";
+            return result;
+        }
+
+        function exchangeRatesFromMMk(amount,currency){
+            let calculation = amount / exchangeRates[currency];
+            let result = calculation +" "+ currency;
+            return result;
+        }
+
+        let fruitPrice = {
+            banana : 150,
+            watermelon : 250,
+            strawberry : 190,
+            orange : 100,
+            apple : 120,
+        }
+
+        function totalCost(quantity,type){
+            let calculation = quantity * fruitPrice[type];
+            let result = calculation + " mmk";
+            return {
+                name : type,
+                unitPrice : fruitPrice[type],
+                quantity : quantity,
+                cost : calculation,
+                tax : taxPaid(calculation),
+                // total : this.cost + this.tax
+                total : calculation + taxPaid(calculation),
+            };
+        }
+
+        function taxPaid(amount, percentage=5){
+            return (amount*percentage)/100;
+        }
+
+    </script>
+    
+</body>
+</html>

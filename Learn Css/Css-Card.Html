@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+
+        *{
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 15px;
+            background-color: rgb(250, 250, 250);
+        }
+
+        .card{
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            vertical-align: top;
+            /* border: 1px solid black; */
+            display: inline-block;
+            overflow: hidden;
+            box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        }
+
+        .card-body{
+            padding: 15px;
+        }
+
+        .card-title{
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-img{
+            width: 100%;
+            display: block;
+        }
+
+        .card-icon{
+            margin: 10px 0;
+        }
+
+        .card-paragraph{
+            margin-bottom: 0;
+            color: #767676;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .text-right{
+            text-align: right;
+        }
+
+        .add-to-cart{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border: none;
+            display: block;
+            border-radius: 50%;
+            margin-top: -20px;
+            margin-left: auto;
+            position: relative;
+            margin-right: 15px;
+        }
+
+        .see-more{
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border: none;
+            display: block;
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: -20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-body">
+            <p class="card-title">Hello Nice To Meet You</p>
+            <p class="card-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore soluta laboriosam. Ipsam voluptates esse adipisci ipsa, quia obcaecati sit tempore reiciendis quas atque odio, eum dolor magnam quidem omnis.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-center">
+            <p class="card-title">Hello Nice To Meet You</p>
+            <p class="card-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore soluta laboriosam. Ipsam voluptates esse adipisci ipsa, quia obcaecati sit tempore reiciendis quas atque odio, eum dolor magnam quidem omnis.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-right">
+            <p class="card-title">Hello Nice To Meet You</p>
+            <p class="card-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore soluta laboriosam. Ipsam voluptates esse adipisci ipsa, quia obcaecati sit tempore reiciendis quas atque odio, eum dolor magnam quidem omnis.
+            </p>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="card">
+        <img src="./assets/3846574.jpg" class="card-img" alt="">
+        <div class="card-body">
+            <p class="card-title">My First Painting</p>
+            <p class="card-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore soluta laboriosam. Ipsam voluptates esse adipisci ipsa, quia obcaecati sit tempore reiciendis quas atque odio, eum dolor magnam quidem omnis.
+            </p>
+        </div>
+    </div>
+
+    <div class="card" style="overflow: visible;">
+        <div class="card-body text-center">
+            <i class="card-icon fas fa-cog fa-spin fa-3x"></i>
+            <p class="card-title">Hello Nice To Meet You</p>
+            <p class="card-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore soluta laboriosam. Ipsam voluptates esse adipisci ipsa, quia obcaecati sit tempore reiciendis quas atque odio, eum dolor magnam quidem omnis.
+            </p>
+        </div>
+        <button class="see-more">See More</button>
+    </div>
+
+    <div class="card">
+        <img src="./assets/3846574.jpg" class="card-img" alt="">
+        <button class="add-to-cart">
+            <i class="fas fa-plus"></i>
+        </button>
+        <div class="card-body">
+            <p class="card-title">For Sale</p>
+            <p class="card-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum inventore soluta laboriosam. Ipsam voluptates esse adipisci ipsa, quia obcaecati sit tempore reiciendis quas atque odio, eum dolor magnam quidem omnis.
+            </p>
+    </div>
+
+</body>
+</html>

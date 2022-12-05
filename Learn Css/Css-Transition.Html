@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .test-1{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 4s, transform 2s;
+        }
+
+        div.test-1:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+
+        .test-2{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s; */
+            transition: width 2s;
+        }
+        div.test-2:hover{
+            width: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="test-1"></div>
+
+    <br>
+
+    <div class="test-2">
+        <div></div>
+    </div>
+
+
+    
+    
+</body>
+</html>

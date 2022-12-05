@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="list">
+        <li class="list-item">Apple</li>
+        <li class="list-item">Orange</li>
+        <li class="list-item">Mango</li>
+        <li class="list-item">Banana</li>
+    </ul>
+
+
+
+
+
+    <h1 id="header">Hello</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Quibusdam labore optio ratione debitis officia nostrum! Perferendis, 
+        illo animi harum rerum unde ab nemo totam hic sunt, tempora, maiores mollitia doloremque?
+    </p>
+
+    <input type="text" id="inputText">
+    <button onclick="changeHeader()">Click Me</button>
+
+
+
+    <script>
+
+        // select element
+        let i = document.getElementById("inputText");
+        let h = document.getElementById("header");
+
+        function changeHeader(){
+            // get text from input
+            let inputText = i.value;
+
+            // set text to header
+            h.innerText = inputText;
+            // console.log(inputText)
+        }
+
+
+        
+
+        //window input test
+        // let name = window.prompt("What is your name");
+        // console.log(name)
+
+        //window output test
+        // window.alert(name);
+        // console.log(name)
+
+        // let inputText = prompt("Say Something");
+        // document.getElementById("header").innerText = inputText;
+
+        // input from window => output from document
+        // step 1 input တောင်း
+        // step 2 စာရေးတယ်, ok button နှိပ်
+        // step 3 h1 မှာ ရေးလိုက်တဲ့ စာသားကိုထည့်ပေးလိုက်တယ်
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: darkgrey;
+        }
+
+        .box { 
+            width: 300px;
+            height: 300px;
+            color: white;
+            background-color: black;
+            padding: 50px;
+            font-size: 100px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .style {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p>Hello</p>
+    </div>
+
+    <button id="changeBox">
+        Change Style
+    </button>
+
+    <script>
+
+        let box = document.querySelector(".box");
+        let text = box.children[0];
+
+        document.getElementById("changeBox").addEventListener("click",function(){
+            //change html
+            // box.children[0].innerText = "No"
+            if(text.innerText == "Yes") {
+                text.innerText = "No"
+            }else {
+                text.innerText = "Yes"
+            }
+
+            //change css
+            // box.style.background = "white"
+            // box.style.color = "black"
+            box.classList.toggle("style")
+            // document.body.style.background = "Green"
+        })
+
+    </script>
+    
+</body>
+</html>

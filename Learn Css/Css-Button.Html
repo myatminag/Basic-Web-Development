@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .Btn{
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            font: 12px;
+        }
+
+        .Btn-outline-primary{
+            background-color: white;
+            border: 2px solid blue;
+            color: blue;
+        }
+        
+        .Btn-outline-primary:hover{
+            background-color: blue;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .Btn-primary{
+            background-color: rgb(241, 86, 86);
+            border-color: rgb(241, 86, 86);
+        }
+
+        .Btn-primary:active{
+            background-color: rgb(214, 78, 78);
+            border-color: rgb(214, 78, 78));
+        }
+
+        .Btn-secondary{
+            background-color: rgb(214, 134, 88);
+            border: 2px solid rgb(214, 134, 88);    
+        }
+
+        .Btn-secondary:active{
+            background-color: gb(196, 133, 96);
+            border-color: rgb(196, 133, 96);
+        }
+
+        .Btn-dark{
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        .Btn-dark:active{
+            background-color: rgb(70, 69, 68);
+            border-color: rgb(70, 69, 68);
+        }
+
+        .rounded{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="Btn Btn-primary">Normal Buttom</button>
+    <a class="Btn Btn-primary" href="#">A Tag Button</a>
+
+    <button class="Btn Btn-secondary">Secondary Button</button>
+
+    <button class="Btn Btn-dark">Dark Button</button>
+
+    <hr>
+
+    <button class="Btn Btn-outline-primary">Outline Buttom</button>
+
+    <button class="Btn Btn-secondary">
+        <i class="fas fa-home"></i>
+    </button>
+
+    <button class="Btn Btn-outline-primary">
+        <i class="fas fa-car"></i>
+    </button>
+
+    <hr>
+
+    <button class="Btn Btn-primary rounded">Normal Buttom</button>
+
+    <button class="Btn Btn-outline-primary rounded">Outline Buttom</button>
+  
+</body>
+</html>

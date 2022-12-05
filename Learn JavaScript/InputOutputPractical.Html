@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #result{
+            width: 200px;
+            display: inline-block;
+            height: 25px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Area Calculator</h1>
+    <div class="">
+        <span>Result :</span>
+        <span id="result"></span>
+        <button onclick="addList()">Store</button>
+        <button onclick="clearResult()">Clear</button>
+
+    </div>
+    <br> 
+    <div class="">
+        <input type="number" id="width" placeholder="width">
+        <input type="number" id="breath" placeholder="breath">
+        <input type="button" value="Calculate" onclick="calcArea()">
+    </div>
+
+    <ul id="list"></ul>
+
+    <script>
+
+        // select
+        let width = document.getElementById("width");
+        let breath = document.getElementById("breath");
+        let result = document.getElementById("result");
+        let list = document.getElementById("list");
+
+        function calcArea(){
+            if(width.value == 0 || breath.value == 0){
+                alert("Please Fill Width & Breath")
+            }else{
+                let area = width.value * breath.value
+                result.innerHTML = `${width.value}ft x ${breath.value}ft = ${area} ft<sup>2</sup>`;
+                width.value ="";
+                breath.value = "";
+            }   
+        }
+
+        function addList(){
+            if(result.innerHTML == ""){
+                alert("Result is empty")
+            }else{ 
+                list.innerHTML += `<li>${result.innerHTML}</li>`;
+                // result.innerHTML = "";
+                clearResult();
+            }
+        }
+
+        function clearResult(){
+            result.innerHTML = "";
+        }
+        
+    </script>
+    
+</body>
+</html>

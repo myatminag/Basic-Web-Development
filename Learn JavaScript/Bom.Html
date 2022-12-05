@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body { 
+            height: 3000px;
+        }
+
+        img {
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <img src="./Wallpaper/3846574.jpg" alt="">
+    <img src="./Wallpaper/tall-trees-forest-mountains-covered-with-fog.jpg" alt=""> -->
+
+    <button onclick="clearInterval(myControl)">Stop</button>
+
+    <script>
+
+        // window.addEventListener("scroll",_=>console.log(pageYOffset))
+        // window.addEventListener("resize",_=>console.log(innerWidth,innerHeight))
+
+        // window.addEventListener("load",_=>console.log("Loading Finished"))
+
+        // console.log("a");
+        // console.log("b");
+        // console.log("c");
+        
+        let a = 1;
+
+        function run() {
+            console.log("This is Run "+ a++);
+        }
+
+        let myControl = setInterval(run,3000)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style type="text/css">
+        *{
+            font-family: 'Montserrat', sans-serif;
+            color: #581b98;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #17b978;
+        }
+
+        .login-form{
+            width: 350px;
+            border: 2px solid #ffcdab;
+            padding: 30px 20px;
+            border-radius: 10px;
+            /* margin: 200px auto; */
+           
+        }
+
+        .login-form legend{
+            font-size: 2em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .form-input{
+            margin-bottom: 20px;
+        }
+
+        .form-input label{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-input input{
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px 15px;
+            border: 2px solid #ffcdab;
+            background: #fff4e3;
+        }
+
+        .btn{
+            border-radius: 10px;
+            padding: 10px 15px;
+            border: 2px solid #5d5d5a;
+            background-color: #5d5d5a;
+            color: #fff4e3;
+            margin-right: 10px;
+        }
+
+        .text-light{
+            color: #fff4e3;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <form>
+        <fieldset class="login-form">
+            <legend class="text-light">
+                <i class="fas fa-unlock-alt text-light fa-fw"></i>
+                Login Form
+            </legend>
+
+            <div class="form-input">
+                <label class="text-light">
+                    <i class="fas fa-user text-light fa-fw"></i>User Name
+                </label>
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="form-input">
+                <label class="text-light">
+                    <i class="fas fa-key text-light fa-fw"></i>Password
+                </label>
+                <input type="password" name="" id="">
+            </div>
+
+            <button class="btn">
+                <i class="fas fa-lock-open text-light fa-fw"></i>Login
+            </button>
+
+            <a href="#" class="reg-link">Register Account</a>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
